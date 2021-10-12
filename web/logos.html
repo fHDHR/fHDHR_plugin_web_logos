@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h4 style="text-align: center;">Logos</h4>
+
+
+  <div class="container">
+    <table class="table-medium center">
+      <tbody>
+
+        <tr>
+          <th>Name</th>
+          <th>URL</th>
+        </tr>
+
+        {% for logo_dict in logo_dicts %}
+
+          <tr>
+            <td>{{ logo_dict["name"] }}</td>
+            <td>
+              <a href="{{ logo_dict["url"] }}">{{ logo_dict["name"] }} Logo</a>
+            </td>
+          </tr>
+
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+
+{% endblock %}
