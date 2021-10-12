@@ -24,3 +24,6 @@ Join us in `#fHDHR <irc://irc.freenode.net/#fHDHR>`_ on Freenode.
 ````
 
 ````
+
+
+[Logos sourced from](https://github.com/PseudoTV/PseudoTV_Logos)
