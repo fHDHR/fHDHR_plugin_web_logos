@@ -16,9 +16,9 @@ class Logos_API():
         self.logo_files = pathlib.Path(plugin_utils.path).joinpath('logos')
 
     def __call__(self, *args):
-        return self.get(*args)
+        return self.handler(*args)
 
-    def get(self, *args):
+    def handler(self, *args):
 
         logo_name = request.args.get('logo_name', default="", type=str)
 
