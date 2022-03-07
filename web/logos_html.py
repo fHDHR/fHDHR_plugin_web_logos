@@ -23,9 +23,9 @@ class Logos_html():
         self.template.write(open(self.template_file).read())
 
     def __call__(self, *args):
-        return self.get(*args)
+        return self.handler(*args)
 
-    def get(self, *args):
+    def handler(self, *args):
 
         logo_list = self.list_logos
         logo_dicts = []
